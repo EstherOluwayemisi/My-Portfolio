@@ -98,7 +98,6 @@ header {
   border-radius: 50%;
   margin-left: 150px;
   margin-top: 30px;
-  /* transition: 0.5s; */
 }
 /* .home-item img:hover {
   transform: scale(1.2);
@@ -301,12 +300,13 @@ footer {
     margin-top: 3rem;
     font-size: 1.5rem;
   }
-  .home h3{
-margin-top: 5px;
+  .home h3 {
+    margin-top: 5px;
   }
   .home-item img {
-    width: 200px;
-    margin-top: 20px;
+    /* width: 200px; */
+    max-width: 300px;
+    margin: 20px auto;
   }
 
   /* Skills */

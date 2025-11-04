@@ -304,9 +304,19 @@ footer {
     margin-top: 5px;
   }
   .home-item img {
-    /* width: 200px; */
-    max-width: 300px;
+    max-width: 370px;
     margin: 20px auto;
+  }
+  .about{
+    margin-top: 1.5rem;
+    flex-direction: column;
+  }
+  .about-contain{
+    text-align:center ;
+    margin-top: 1.5rem;
+  }
+  .section-p{
+    text-align: center;
   }
 
   /* Skills */
@@ -322,5 +332,9 @@ footer {
   /* Contact */
   .social-links a {
     font-size: 1.6rem;
+  }
+  footer {
+    /* padding: 15px; */
+    margin-top: 12rem;
   }
 }

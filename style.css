@@ -98,11 +98,11 @@ header {
   border-radius: 50%;
   margin-left: 150px;
   margin-top: 30px;
-  transition: 0.5s;
+  /* transition: 0.5s; */
 }
-.home-item img:hover {
+/* .home-item img:hover {
   transform: scale(1.2);
-}
+} */
 .about {
   display: flex;
   align-items: center;

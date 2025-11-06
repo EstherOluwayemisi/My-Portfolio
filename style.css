@@ -268,7 +268,6 @@ footer {
 @media (max-width: 768px) {
   #menu-icon {
     display: block;
-    color: white;
   }
   #close-icon {
     display: none;
@@ -287,6 +286,9 @@ footer {
     border-radius: 10px;
     transition: 0.3s ease;
     display: none;
+  }
+   .logo-list.active {
+    display: flex;
   }
   .navbar.active {
     right: 10px;

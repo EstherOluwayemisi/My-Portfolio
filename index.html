@@ -9,46 +9,197 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="About.html" class="logo">Oluwayemisi Esther</a>
+    <nav id="desktop-nav">
+      <div class="logo">Oluwayemisi Esther</div>
       <div>
-        <img src="Asset/hamburger.svg" id="menu-icon" alt="Menu Icon" />
-        <img src="Asset/close-icon.webp" id="close-icon" alt="Close Icon" />
-      </div>
-      <nav>
         <ul class="logo-list">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="skills.html">Skills</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="contacts.html">Contact</a></li>
+          <!-- <li class="active"><a href="ihtml">Home</a></li> -->
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav>
-    </header>
-
-    <main class="home">
-      <div class="home-info">
-        
-        <h2>Hi! I am Oluwayemisi Esther</h2>
-        <h3>Frontend Developer</h3>
-        <p>I am a passionate frontend developer with experience in 
-          creating responsive and user-friendly web applications. 
-          I love turning ideas into reality using code.
-        </p>
-        <div class="link">
-          <a href="https://github.com/EstherOluwayemisi"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/oluwayemisi-esther-34583034b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="bx bxl-linkedin"></i></a>
-          <a href="mailto:abiodunesther77@gmail.com"><i class="bx bx-envelope"></i></a>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Oluwayemisi Esther</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contacts" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
-      <div class="home-item">
-        <img src="Asset/My-Picture.webp" />
+    </nav>
+
+    <section id="profile">
+      <div>
+        <h2 class="section-text">Hi! I am Oluwayemisi Esther</h2>
+        <h3 class="section-title">Frontend Developer</h3>
+        <p class="section-p">
+          I am a passionate frontend developer with experience in creating
+          responsive and user-friendly web applications. I love turning ideas
+          into reality using code.
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/resume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='./#contacts'">
+            Contact Me
+          </button>
+        </div>
+        <div id="socials">
+          <img
+            src="assets/images.png"
+            alt="my linkedin profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/oluwayemisi-esther-34583034b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"
+          />
+          <img
+            src="assets/GitHub1.png"
+            alt="my github profile"
+            class="icon"
+            onclick="location.href='https://github.com/EstherOluwayemisi'"
+          />
+        </div>
       </div>
-    </main>
+      <div class="section-pic">
+        <img src="assets/My-Picture.webp" alt="Oluwayemisi Esther Picture" />
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-heading">About Me</h2>
+      <div class="section-content">
+        <div class="section-picture">
+          <img src="assets/My-Picture.webp" alt="Oluwayemisi Esther Picture" />
+        </div>
+        <div class="section-text">
+          <p>
+            I am <strong>Oluwayemisi Esther</strong>, a dedicated frontend developer with a
+            passion for crafting engaging and intuitive web experiences. With a
+            strong foundation in HTML, CSS, and JavaScript, I specialize in
+            building responsive and user-friendly interfaces that bring ideas to
+            life.
+          </p>
+          <p>
+            My journey into web development began with a curiosity for how
+            websites are built, leading me to pursue formal education and
+            hands-on experience in the field. I thrive on solving complex
+            problems and continuously learning new technologies to stay ahead in
+            this ever-evolving industry.
+          </p>
+          <p>
+            When I'm not coding, I enjoy exploring design trends, contributing
+            to open-source projects, and collaborating with fellow developers to
+            create innovative solutions.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="skills">
+      <h2 class="section-heading">Skills</h2>
+      <div class="skills-container">
+        <div class="skill-item">
+          <i class="bx bxl-html5 skill-icon"></i>
+          <h3>HTML5</h3>
+        </div>
+        <div class="skill-item">
+          <i class="bx bxl-css3 skill-icon"></i>
+          <h3>CSS3</h3>
+        </div>
+        <div class="skill-item">
+          <i class="bx bxl-javascript skill-icon"></i>
+          <h3>JavaScript</h3>
+        </div>
+        <div class="skill-item">
+          <i class="bx bxl-react skill-icon"></i>
+          <h3>React</h3>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="projects">
+  <h2 class="section-heading">My Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3>FAQ Page</h3>
+      <p>A simple FAQ accordion built with HTML, CSS, and JavaScript.</p>
+      <a href="https://faq-nu-nine.vercel.app" target="_blank" class="project-btn">Live Link</a>
+    </div>
+    <div class="project-card">
+      <h3>Profile Card</h3>
+      <p>A clean, responsive profile card design using HTML and CSS.</p>
+      <a href="https://profile-card-chi-three.vercel.app" target="_blank" class="project-btn">Live Link</a>
+    </div>
+    <div class="project-card">
+      <h3>REST API Project</h3>
+      <p>Displays country data using the REST Countries API.</p>
+      <a href="https://rest-api-sooty-chi.vercel.app" target="_blank" class="project-btn">Live Link</a>
+    </div>
+    <div class="project-card">
+      <h3>Landing Page</h3>
+      <p>A modern, responsive landing page layout.</p>
+      <a href="https://doyenne-adpo.vercel.app/" target="_blank" class="project-btn">Live Link</a>
+    </div>
+    <div class="project-card">
+      <h3>Calculator App</h3>
+      <p>A JavaScript calculator for basic math operations.</p>
+      <a href="https://calculator-mu-two-62.vercel.app" target="_blank" class="project-btn">Live Link</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 class="section-heading">Contact Me</h2>
+  <div class="contact-container">
+    <form
+      action="https://formspree.io/f/mayvlrgn"
+      method="POST"
+      class="contact-form"
+    >
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="_replyto" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit" class="btn btn-color-1">Send Message</button>
+    </form>
+    <div class="contact-info">
+      <h3>Get in Touch</h3>
+      <p>
+        Feel free to reach out 
+        to me via email or connect with me on LinkedIn.
+          </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:abiodunesther77@gmail.com">abiodunesther77@gmail.com</a>
+      </p>
+      <p>
+        <strong>LinkedIn:</strong>
+         <a href="https://www.linkedin.com/in/oluwayemisi-esther-34583034b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Oluwayemisi Esther</a>
+              </p>
+    </div>
+  </div>
+</section>
     <footer>
       <p>&copy; 2025 Oluwayemisi Esther. All Rights Reserved.</p>
     </footer>
